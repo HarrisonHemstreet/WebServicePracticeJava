@@ -1,6 +1,6 @@
 package com.HarrisonHemstreet;
 
-import java.util.Date;
+import java.awt.Point;
 
 /**
  * Hello world!
@@ -8,11 +8,10 @@ import java.util.Date;
  */
 public class App {
   public static void main(String[] args) {
-    // primitive type: int
-    // int age = 30;
-
-    // reference type: Date
-    Date now = new Date();
-    System.out.println(now);
+    Point point1 = new Point(1, 1);
+    Point point2 = point1;
+    point2.x = 2;
+    System.out.println("point1:" + point1);
+    System.out.println("point2:" + point2);
   }
 }
